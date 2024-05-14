@@ -25,7 +25,7 @@ module.exports = {
 					name: "electron-test",
 				},
 				prerelease: false,
-				draft: true,
+				draft: false,
 			},
 		},
 	],
