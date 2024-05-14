@@ -16,6 +16,19 @@ module.exports = {
 		// ...
 	},
 	rebuildConfig: {},
+	publishers: [
+		{
+			name: "@electron-forge/publisher-github",
+			config: {
+				repository: {
+					owner: "marcosvignoli",
+					name: "electron-test",
+				},
+				prerelease: false,
+				draft: true,
+			},
+		},
+	],
 	makers: [
 		{
 			name: "@electron-forge/maker-squirrel",
