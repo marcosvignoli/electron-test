@@ -3,7 +3,10 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("node:path");
-require("update-electron-app")();
+const { updateElectronApp } = require("update-electron-app");
+
+// This works like a charm, it sends a notification to the user when the app can update in a native way
+updateElectronApp();
 
 const createWindow = () => {
 	// Create the browser window.
@@ -22,7 +25,9 @@ const createWindow = () => {
 // This method will be called when Electron has finished the initialization
 // And is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
+
 app.on("ready", () => {
+	// updateElectronApp(); // additional configuration options available
 	createWindow();
 
 	ipcMain.handle("ping", () => "pong");
