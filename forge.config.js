@@ -28,6 +28,7 @@ module.exports = {
 					name: "electron-test",
 				},
 				prerelease: false,
+				// This handles if the release it makes it self as a draft or it published
 				draft: false,
 				authToken: process.env.GITHUB_TOKEN,
 			},
