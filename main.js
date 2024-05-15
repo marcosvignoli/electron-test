@@ -3,6 +3,7 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("node:path");
+// Native module to handle AutoUpdates
 const { updateElectronApp } = require("update-electron-app");
 
 // This works like a charm, it sends a notification to the user when the app can update in a native way

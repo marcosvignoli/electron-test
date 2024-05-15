@@ -1,20 +1,21 @@
-# Electron Tutorial
+# Vanilla Electron
 
-## Project Setup
+This a quick example of a functional electron without frameworks.
 
-## App Module
+## Functionalities added:
 
-This is what handles the life cycle of the app.
+- Code Sign for MacOS
+- Notarization for MacOS
+- App Building with Electron Forge
+- Auto Release Publish with Electron Forge
 
-## BrowserWindow
+## Important:
 
-This is what it handles the windows of the app, meaning the rendering of the pages that we create.
+Create .env file and add the correspondent variables
 
-## Preload
-
-The preload its a process to access to the Node functionality.
-This needs to be accessed before the app has rendered
-
-## Renderer
-
-The renderer allows us to manipulate all the Front End of our app having access to the same API's than the web browser
+```
+APPLE_ID = ""
+APPLE_PASSWORD = ""
+APPLE_TEAM_ID = ""
+GITHUB_TOKEN = ""
+```
